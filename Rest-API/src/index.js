@@ -4,7 +4,6 @@ const express = require('express')
 const app = express()
 const helmet = require('helmet')
 const safeCompare = require('safe-compare')
-const xss = require('xss-clean')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 
@@ -20,7 +19,6 @@ app.use(morgan('common'))
 app.set('trust proxy', 1)
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(xss())
 
 /* Require our engines/libs and pass our client */
 require('./library/database.js')(client)

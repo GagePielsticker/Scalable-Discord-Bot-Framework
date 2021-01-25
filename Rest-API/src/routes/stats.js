@@ -10,8 +10,6 @@ const router = express.Router()
 module.exports = client => {
   /* Our main index endpoint */
   router.get('/', (req, res) => {
-    // filterXSS('string')  manual xss filtering
-
     res.send('Welcome to the stats endpoint.')
   })
 

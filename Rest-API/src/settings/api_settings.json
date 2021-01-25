@@ -1,0 +1,16 @@
+{
+  "api" : {
+    "port" : 3000,
+    "secretKey" : "setThisToSomethingSecure"
+  },
+
+  "mongodb" : {
+    "host" : "localhost",
+    "port" : "27017",
+    "username" : "",
+    "password" : "",
+    "database" : "yourDatabaseHere",
+    "reconnect_attempts": 10,
+    "reconnect_interval": 1000
+  }
+}

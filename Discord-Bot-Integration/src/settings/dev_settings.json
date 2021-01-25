@@ -1,0 +1,19 @@
+{
+  "token" : "",
+  "prefix" : ".",
+  "bot_description" : "I am a bot description",
+  "inviteURL" : "https://a.com/",
+  "supportServer" : "https://a.com/",
+  "developers": ["Your discord id"],
+
+  "embed_color" : 16645628,
+
+  "api" : {
+    "secret": "setThisToSomethingSecure",
+    "host": "localhost",
+    "port": 3000,
+    "ping_ms": 5000,
+    "request_timeout": 5000,
+    "stat_post_ms": 3600000
+  }
+}
